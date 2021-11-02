@@ -1,0 +1,21 @@
+sss = ["2123","21","2werwerwer123", "111", "22222222222222222222222222222222222222222222"]
+
+sss_min_ind = sss_max_ind = 0
+sss_min = sss_max = len(sss[0])
+
+for i in range(len(sss)):
+    k = len(sss[i])
+    print(sss[i], ": ", k)
+    if k>sss_max:
+        sss_max = k
+        sss_max_ind = i
+    if k<sss_min:
+        sss_min = k
+        sss_min_ind = i
+print()
+print(sss[sss_min_ind], sss[sss_max_ind])
+#print(sss_min, sss_max)
+#!/usr/bin/env python3
+# coding=utf-8
+
+# Дан текст, удалить из него все слова, содержащие нечетное количество символов
